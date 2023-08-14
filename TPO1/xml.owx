@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/manuel/ontologies/2023/4/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/manuel/ontologies/2023/4/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/manuel/ontologies/2023/4/untitled-ontology-4/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-4" IRI="http://www.semanticweb.org/manuel/ontologies/2023/4/untitled-ontology-4#"/>
+    <Declaration>
+        <Class IRI="#Acuatico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alimento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bipedo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cetaceo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cuadripedo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Habitat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pez"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terrestre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#come"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esComido"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esHabitado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#habita"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#clima"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descripcion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#peso_prom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tamaño_prom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipo_agua"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ubicacion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alimento1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alimento2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Animal1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Animal2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Habitat1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Habitat2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Acuatico"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bipedo"/>
+        <Class IRI="#Terrestre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cetaceo"/>
+        <Class IRI="#Acuatico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cuadripedo"/>
+        <Class IRI="#Terrestre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pez"/>
+        <Class IRI="#Acuatico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terrestre"/>
+        <Class IRI="#Animal"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Acuatico"/>
+        <Class IRI="#Terrestre"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bipedo"/>
+        <Class IRI="#Cuadripedo"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cetaceo"/>
+        <Class IRI="#Pez"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Alimento"/>
+        <NamedIndividual IRI="#Alimento1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cetaceo"/>
+        <NamedIndividual IRI="#Animal1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cuadripedo"/>
+        <NamedIndividual IRI="#Animal2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Habitat"/>
+        <NamedIndividual IRI="#Habitat1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Habitat"/>
+        <NamedIndividual IRI="#Habitat2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esComido"/>
+        <NamedIndividual IRI="#Alimento1"/>
+        <NamedIndividual IRI="#Animal2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esComido"/>
+        <NamedIndividual IRI="#Alimento2"/>
+        <NamedIndividual IRI="#Animal1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#come"/>
+        <NamedIndividual IRI="#Animal1"/>
+        <NamedIndividual IRI="#Alimento2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#habita"/>
+        <NamedIndividual IRI="#Animal1"/>
+        <NamedIndividual IRI="#Habitat1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#come"/>
+        <NamedIndividual IRI="#Animal2"/>
+        <NamedIndividual IRI="#Alimento1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#habita"/>
+        <NamedIndividual IRI="#Animal2"/>
+        <NamedIndividual IRI="#Habitat2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esHabitado"/>
+        <NamedIndividual IRI="#Habitat1"/>
+        <NamedIndividual IRI="#Animal1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esHabitado"/>
+        <NamedIndividual IRI="#Habitat2"/>
+        <NamedIndividual IRI="#Animal2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcion"/>
+        <NamedIndividual IRI="#Alimento1"/>
+        <Literal>Una descripcion del Alimento1 que es fruta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Alimento1"/>
+        <Literal>Fruta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descripcion"/>
+        <NamedIndividual IRI="#Alimento2"/>
+        <Literal>Una descripcion sobre el alimento2 que son animales marinos pequeños</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Alimento2"/>
+        <Literal>Peces, focas y otros animales marinos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Animal1"/>
+        <Literal>Orca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tamaño_prom"/>
+        <NamedIndividual IRI="#Animal1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3500.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tamaño_prom"/>
+        <NamedIndividual IRI="#Animal1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo_agua"/>
+        <NamedIndividual IRI="#Animal1"/>
+        <Literal>Salada</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Animal2"/>
+        <Literal>Elefante</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peso_prom"/>
+        <NamedIndividual IRI="#Animal2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5000.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tamaño_prom"/>
+        <NamedIndividual IRI="#Animal2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#clima"/>
+        <NamedIndividual IRI="#Habitat1"/>
+        <Literal>Aguas frias y templadas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Habitat1"/>
+        <Literal>Aguas costeras</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ubicacion"/>
+        <NamedIndividual IRI="#Habitat1"/>
+        <Literal>Costas continentales</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#clima"/>
+        <NamedIndividual IRI="#Habitat2"/>
+        <Literal>Calido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Habitat2"/>
+        <Literal>Africa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nombre"/>
+        <NamedIndividual IRI="#Habitat2"/>
+        <Literal>Sabanas boscosas</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#come"/>
+        <ObjectProperty IRI="#esComido"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#esHabitado"/>
+        <ObjectProperty IRI="#habita"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#come"/>
+        <Class IRI="#Alimento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esComido"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esHabitado"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#habita"/>
+        <Class IRI="#Habitat"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#come"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esComido"/>
+        <Class IRI="#Alimento"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esHabitado"/>
+        <Class IRI="#Habitat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#habita"/>
+        <Class IRI="#Animal"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#clima"/>
+        <Class IRI="#Habitat"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripcion"/>
+        <Class IRI="#Alimento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Alimento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nombre"/>
+        <Class IRI="#Habitat"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#peso_prom"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tamaño_prom"/>
+        <Class IRI="#Animal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipo_agua"/>
+        <Class IRI="#Acuatico"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ubicacion"/>
+        <Class IRI="#Habitat"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#clima"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descripcion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#peso_prom"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tamaño_prom"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipo_agua"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ubicacion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

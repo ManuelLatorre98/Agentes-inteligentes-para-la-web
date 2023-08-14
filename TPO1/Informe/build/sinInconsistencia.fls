@@ -1,0 +1,4 @@
+PWD c:\Users\manul\OneDrive\Escritorio\Agentes Inteligentes\TPO1\Informe
+INPUT C:\Users\manul\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\manul\OneDrive\Escritorio\Agentes Inteligentes\TPO1\Informe\sinInconsistencia.tex
+OUTPUT c:\Users\manul\OneDrive\Escritorio\Agentes Inteligentes\TPO1\Informe\build\sinInconsistencia.log

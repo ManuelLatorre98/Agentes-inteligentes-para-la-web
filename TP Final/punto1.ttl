@@ -1,0 +1,63 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ex: <http://example.org/> .
+
+#Definicion del pais y la provincia (c)
+ex:paisArgentina a ex:Location;
+  ex:nombre "Argentina".
+
+ex:provinciaNeuquen a ex:Location;
+  ex:nombre "Neuquén";
+  ex:pertenceA ex:paisArgentina.
+
+#Definicion de los lenguajes que hablo (d)
+ex:idiomaEspañol a ex:Lenguage;
+  ex:nombre "Español".
+
+ex:idiomaIngles a ex:Lenguage;
+  ex:nombre "Ingles".
+
+#Universidad de la universidad en la que estudio y esperiencias laborales previas y actuales (e)
+ex:univesidadUnco a ex:InstitucionEducativa;
+  ex:nombre "Univeridad Nacional del Comahue";
+  ex:fechaInicio "02/02/2017";
+  ex:fechaFin "En curso".
+
+ex:situacionLaboralActual a ex:SituacionLaboral;
+  ex:position "Becario en proyecto de extensión de la UNCO";
+  ex:lugar ex:universidadUnco.
+
+ex:situacionLaboralPasada a ex:SituacionLaboral;
+  ex:position "No hay";
+  ex:company "No hay";
+  ex:fechaInicio "No hay";
+  ex:fechaFin "No hay".
+
+#Competencias y habilidades (f)
+ex:lenguajeJava a ex:LenguajeProgramacion;
+  ex:nombre "Java";
+  ex:nivel "Avanzado".
+
+ex:lenguajeTypescript a ex:LenguajeProgramacion;
+ex:nombre "Typescript";
+ex:nivel "Avanzado".
+
+#Hobbies y pasatiempos
+ex:lectura a ex:Pasatiempo;
+  ex:nombre "Lectura".
+
+ex:futbol a ex:Pasatiempo;
+  ex:nombre "Jugar al futbol".
+
+#Definicion de mi entidad (a,b)
+ex:yo a foaf:Person ;
+  foaf:nombre "Manuel";
+  foaf:apellido "Latorre";
+  ex:paisNacimiento ex:paisArgentina;
+  ex:provinciaNacimiento ex:provinciaNequen;
+  ex:idiomas ex:idiomaEspañol, ex:idiomaIngles;
+  ex:lugarEstudios ex:universidadUnco;
+  ex:experiencia ex:situacionLaboralActual, ex:situacionLaboralPasada;
+  ex:tieneHabilidad ex:lenguajeJava, ex:lenguajeTypescript;
+  ex:pasatiempo ex:lectura,
+                ex:Futbol.
+  

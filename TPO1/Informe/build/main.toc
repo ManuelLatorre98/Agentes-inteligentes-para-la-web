@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Ejercicio 1}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Validación con Protégé}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Definición de relación en OWL y RDF}{4}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Ejercicio 2}{6}{section.2}%
+\contentsline {section}{\numberline {3}Ejercicio 3}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Web 2.0 vs Web Semantica}{9}{subsection.3.1}%
